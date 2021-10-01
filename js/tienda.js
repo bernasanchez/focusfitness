@@ -67,6 +67,7 @@ function mostrarProductosTienda(){
       </ul>
       `;
   }
+  
 }
 
 //Mostrar Productos Seleccionados
