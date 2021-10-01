@@ -1,0 +1,48 @@
+{
+    "stock": [
+        {
+            "id": 1,
+            "name": "Mancuerna Fundicion",
+            "peso": 2,
+            "precio": 200,
+            "img": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fzagorind.com%2Fwp-content%2Fuploads%2F2021%2F03%2Fimagen_2021-03-27_130054-230x230.png&f=1&nofb=1"
+        },
+        { "id": 2, "name": "Mancuerna Fundicion", "peso": 4, "precio": 400, "img": "../multimedia/mancuerna1.jpg"
+        },
+        { "id": 3, "name": "Mancuerna Fundicion", "peso": 6, "precio": 600, "img": "../multimedia/mancuerna1.jpg"
+        },
+        { "id": 4, "name": "Air Bike", "peso": 0, "precio": 40000, "img": "../multimedia/airbike.jpg"
+        },
+        { "id": 5, "name": "Remo", "peso": 0, "precio": 50000, "img": "../multimedia/remo.jpg"
+        },
+        { "id": 6, "name": "Bici Fija", "peso": 12, "precio": 60000, "img": "../multimedia/bicifija2.jpg"
+        },
+        { "id": 7, "name": "Blanco Plano", "peso": 0, "precio": 20000, "img": "../multimedia/banco-plano2.jpg"
+        },
+        { "id": 8, "name": "Piso Caucho", "peso": 0, "precio": 2000, "img": "../multimedia/pisonuevo1.jpg"
+        },
+        { "id": 9, "name": "Piso Caucho", "peso": 0, "precio": 2000, "img": "../multimedia/piso2.jpg"
+        },
+        {
+            "id": 10,
+            "name": "Rack Mancuernero Hex",
+            "peso": 0,
+            "precio": 30000,
+            "img": "../multimedia/rack-mancuernero-mancuernas-hex.png"
+        },
+        {
+            "id": 11,
+            "name": "Rack Porta Barra",
+            "peso": 0,
+            "precio": 20000,
+            "img": "../multimedia/rack-porta-barras.jpg"
+        },
+        {
+            "id": 12,
+            "name": "Rack Porta Kb",
+            "peso": 0,
+            "precio": 40000,
+            "img": "../multimedia/rack-porta-kettlebells.jpg"
+        }
+    ]
+}

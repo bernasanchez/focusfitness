@@ -1,0 +1,410 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+#grillaGeneral{
+    display: grid;
+    /* height: 3700px; */
+    grid-template-columns: 100%;
+    grid-template-rows: 5% 45% 45% 5%;
+    grid-template-areas: "header"
+                        "portada"
+                        "principal"
+                        "footer" ;
+
+}
+#hijoHeader{
+    background-color: lightgreen;
+}
+#hijoPortada{
+    background-color: lightgreen;
+}
+#hijoPrincipal{
+    background-color: lightblue;
+}
+#hijoFooter{
+    background-color: lightgray;
+}
+#confirmarCompra{
+    background: white;
+}
+
+@media only screen and (max-width: 600px){
+    #grillaGeneral{
+        display: grid;
+        /* height: 4500px; */
+        grid-template-columns: 100%;
+        grid-template-rows: 2% 20% 95% 8%;
+        grid-template-areas: "header"
+                            "portada"
+                            "principal"
+                            "footer" ;
+    
+        background-color: black;
+    
+    }
+
+    /*PAGINA INDEX */
+    #hijoHeader{
+        background-color: black;
+    }
+    #hijoPortada{
+        background-image: url(../multimedia/cf25.jpg);
+        background-color: black;
+        background-size:auto;
+        background-repeat:no-repeat;
+        max-width: 100%;
+        height: auto;
+    }
+    .btn{
+        font-family:'Bebas Neue', cursive; 
+        font-size: 130%;
+        color:white;
+        margin-top: 5%;
+        margin-left: 30%;
+    }
+
+    #hijoPrincipal{
+        background-color: black;
+        
+    }
+    .tituloPrincipal{
+        font-family: 'Bebas Neue', cursive;
+        color:yellow;
+        font-size: 300%;
+        text-align: center;
+    }
+    .tituloSecundario{
+        font-family: 'Bebas Neue', cursive;
+        color: white;
+        font-size: 200%;
+        text-align: center;
+        font-style: oblique;
+
+    }
+    .titulosTerciarios{
+        font-family: 'Bebas Neue', cursive;
+        color: white;
+        font-size: 130%;
+        text-align: center;
+        font-style: oblique;
+        padding-top: 60%;
+    }
+    .tituloFooter{
+        font-family: 'Bebas Neue', cursive;
+        color: white;
+        font-size: 100%;
+        text-align: center;
+        font-style: oblique;
+        margin-top: 5%;
+       
+    }
+    /*Presentacion de la Empresa: imagen y parrafo */
+    #parrafoNosotros{
+        color:white;
+    }
+    #imagenPresentacion{
+        padding-left: 13%;
+    }
+     /*Presentacion de los productos*/
+    .contenedorProductos{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        margin-top: 5%;
+    }
+    img{
+        height:200px;
+        max-width: 100%;
+        border-radius: 8px;
+        border-color: black;
+    }
+    /*Seccion Contacto - PAGINA INDEX*/
+    #grillaContacto{
+        display: grid;
+        height: 800px;
+        grid-template-columns: 100%;
+        grid-template-rows: 50% 50;
+        grid-template-areas: "formulario" 
+                            "ubicacion";
+        background-color:white;
+        column-gap: 3%;
+    }
+    .tituloPrincipalContacto{
+        font-family: 'Bebas Neue', cursive;
+        color:yellow;
+        font-size: 300%;
+        text-align: center;
+        padding-top: 2%
+    }
+    .tituloSecundarioContacto{
+        font-family: 'Bebas Neue', cursive;
+        color:black;
+        font-size: 200%;
+        text-align: center;
+        font-style: oblique;
+       
+    }
+
+
+
+
+    #hijoFooter{
+        background-color: black;
+        
+    }
+    /*FIN PAGINA INDEX*/
+
+    /*PAGINA TIENDA*/
+    .listaProductos{
+        height: 50%;
+        max-width: 80%;
+        padding-left: 8%;
+    }
+    
+
+}
+
+@media only screen and (min-width: 600px){
+    #grillaGeneral{
+        display: grid;
+        /* height: 4300px; */
+        grid-template-columns: 100%;
+        grid-template-rows: 2% 17% 85% 5%;
+        grid-template-areas: "header"
+                            "portada"
+                            "principal"
+                            "footer" ;
+    
+        background-color: black;
+    
+    }
+
+    /*PAGINA INDEX */
+    #hijoHeader{
+        background-color: black;
+    }
+    .navbar{
+        height:100%;
+    }
+    #carro{
+        height: 30%;
+        padding-right: 2px;
+    }
+    #hijoPortada{
+        background-color: black; 
+    }
+    .seccionPortadaIndex{
+        background-image: url(../multimedia/cf25.jpg);
+        background-size:auto;
+        background-repeat:no-repeat;
+        max-width: 100%;
+        height: 600px;
+    }
+    .btn{
+        font-family:'Bebas Neue', cursive; 
+        font-size: 130%;
+        color:white;
+        margin-top: 2%;
+        margin-left: 45%;
+        
+    }
+
+    #hijoPrincipal{
+        background-color: black;
+        
+    }
+    .tituloPrincipal{
+        font-family: 'Bebas Neue', cursive;
+        color:yellow;
+        font-size: 500%;
+        text-align: center;
+    }
+    .tituloSecundario{
+        font-family: 'Bebas Neue', cursive;
+        color: white;
+        font-size: 350%;
+        text-align: center;
+        font-style: oblique;
+
+    }
+    .titulosTerciarios{
+        font-family: 'Bebas Neue', cursive;
+        color: white;
+        font-size: 200%;
+        text-align: center;
+        font-style: oblique;
+        padding-top: 10%;
+    }
+    .tituloFooter{
+        font-family: 'Bebas Neue', cursive;
+        color: white;
+        font-size: 150%;
+        text-align: center;
+        font-style: oblique; 
+    }
+    .bienvenidaUsuario{
+        font-family: 'Bebas Neue', cursive;
+        color: white;
+        font-size: 200%;
+        text-align: center;
+        font-style: oblique; 
+    }
+
+    .contenedorProductos{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        height: auto;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        margin-top: 5%;
+    }
+    img{
+        height: 280px;
+        max-width: 100%;
+        padding-top:  10%; 
+        padding-left: 5%;
+        padding-right: 5%;
+        border-style: solid;
+        border-radius: 4px;
+        border-color:black;
+    }
+    a img:hover{
+        transform: scale(1.05);
+        border-color: white; 
+    }
+
+    #hijoFooter{
+        background-color: black;
+        
+    }
+
+    .contenedorNosotros{
+        display: flex;
+        flex-direction: row;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .cajaPresentacion{
+        width: 600px;
+        text-align: center;
+        font-size: 120%;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: white;
+    }
+
+    .cajaFotoPresentacion{
+        width: 600px;
+        max-width: 100%;
+        height: auto;
+        
+    }
+    #imagenPresentacion{
+        max-width: 100%;
+        height: auto;
+        padding-left: 10%;
+       
+    }
+
+    #grillaContacto{
+        display: grid;
+        height: 600px;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 100%;
+        grid-template-areas: "formulario" "ubicacion";
+        background-color:white;
+        column-gap: 3%;
+    }
+    #formularioConsultas{
+        grid-area:"formulario";
+    }
+    #ubicacionContacto{
+        grid-area:"ubicacion";
+    }
+    .tituloPrincipalContacto{
+        font-family: 'Bebas Neue', cursive;
+        color:yellow;
+        font-size: 300%;
+        text-align: center;
+        padding-top: 2%
+    }
+    .tituloSecundarioContacto{
+        font-family: 'Bebas Neue', cursive;
+        color:black;
+        font-size: 200%;
+        text-align: center;
+        font-style: oblique;
+       
+    }
+
+
+    #carrito{
+        color:green;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+       
+    }
+    #contenedorTienda{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .card{
+        background-color:rgb(189, 236, 189);
+        
+    }
+    .titulosCard{
+        font-family: 'Bebas Neue', cursive;
+        color: black;
+        font-size: 150%;
+        text-align: center;
+        font-style: oblique;
+       
+    }
+
+    #botonForm{
+       margin-left: 40%;
+     
+    }
+
+    .cajaIndice{
+        color: white;
+        font-family:'Bebas Neue', cursive; 
+        text-decoration: none;
+    }
+    /*FIN PAGINA INDEX*/
+
+    /*PAGINA TIENDA*/
+
+    .seccionPortadaTienda{
+        background-image: url(../multimedia/cf10.jpg);
+        background-size:auto;
+        background-repeat:no-repeat;
+        max-width: 100%;
+        height: 700px;
+    }
+    .contenedorProductosTienda{
+       background-color: white;
+    }
+
+    .card-body{
+        height: 180px;
+        width: 70%;
+    }
+    .ingresarCantidad{
+        font-family: 'Bebas Neue', cursive;
+        color: black;
+        font-size: 100%;
+        text-align: center;
+        font-style: oblique;
+    }
+
+
+}

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://kit.fontawesome.com/fa39ecf3ac.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/estilo.css" />
+
+    <title>FOCUS FIT - TIENDA</title>
+  </head>
+  <body>
+    <div id="grillaGeneral">
+      <div id="hijoHeader">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html">FOCUS-FIT</a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="../index.html">HOME</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../index.html">NOSOTROS</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="productos.html"
+                    id="navbarDropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    PRODUCTOS
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">PESO LIBRE</a></li>
+                    <li><a class="dropdown-item" href="#">CARDIO</a></li>
+                    <li><a class="dropdown-item" href="#">BANCOS</a></li>
+                    <li><a class="dropdown-item" href="#">RACKS</a></li>
+                    <li><a class="dropdown-item" href="#">PISOS</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="tienda.html">TIENDA</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="../index.html"
+                    id="navbarDropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    CONTACTO
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">UBICACIÓN</a></li>
+                    <li><a class="dropdown-item" href="#">REDES</a></li>
+                    <li><a class="dropdown-item" href="#">CONSULTAS</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <a href="../pages/tienda.html#contenedorSeleccionados">
+            <button id="carrito"><i class="fas fa-shopping-cart"></i></button>
+          </a>
+        </nav>
+      </div>
+
+      <div id="hijoPortada">
+        <section class="seccionPortadaTienda">
+          <h3 class="titulosTerciarios">ENCONTRÁ TODO EN UN MISMO LUGAR</h3>
+          <h1 class="tituloPrincipal">PRODUCTOS</h1>
+          <h2 class="tituloSecundario">AL MEJOR PRECIO DEL MERCADO</h2>
+        </section>
+      </div>
+
+      <div id="hijoPrincipal">
+        <h1 class="tituloPrincipal">PRODUCTOS DISPONIBLES</h1>
+        <div id="contenedorTienda" class="col">
+          <!--lista productos ---
+              
+            <ul class="listaProductos list-group list-group-horizontal">
+              <li class="list-group-item">
+                <h3> ID:${producto.id}</h3>
+                <img src= ${producto.img} alt="">
+                <p> Producto: ${producto.nombre}</p>
+                <b>Precio: $ ${producto.precio}</b>
+                <h3 class="ingresarCantidad">Cantidad  <input type="number" id="cantidadProducto${producto.id}"></h3>
+                <button href="#" class="btn btn-success" onclick="capturar(${producto.id})">Agregar</button>;
+              </li>
+            </ul>
+            -->
+        </div>
+
+        <h1 class="tituloPrincipal">PRODUCTOS SELECCIONADOS</h1>
+        <div id="contenedorSeleccionados" class="row"></div>
+        <div id="finalizarCompra">
+          <div class="container">
+            <div class="card text-center">
+              <div class="card-header">FINALIZAR COMPRA</div>
+              <div class="card-body">
+                <h5 class="card-title">
+                  Seleccione una opcion para CONFIRMAR o CANCELAR su COMPRA
+                </h5>
+                <a
+                  href="tienda.html#contenedorSeleccionados"
+                  class="btn btn-danger"
+                  id="btnVaciarCarrito"
+                  onclick="limpiarCarrito()"
+                  >VACIAR SELECCIONADOS</a
+                >
+                <a
+                  href="tienda.html#confirmarCompra"
+                  class="btn btn-success"
+                  id="btnConfirmarCompra"
+                  >CONFIRMAR COMPRA</a
+                >
+              </div>
+              <br />
+              <div class="card-footer text-muted">FOCUS-FITNESS</div>
+            </div>
+          </div>
+        </div>
+
+        <div id="confirmarCompra" class="container mt-5">
+          <form id="formularioCompra">
+            <div class="mb-3">
+              <label for="formGroupExampleInput" class="form-label">Nombre y Apellido</label>
+              <input
+                type="text"
+                class="form-control"
+                id="nombreInput"
+                placeholder="Ingrese su nombre completo"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="formGroupExampleInput2" class="form-label">Email</label>
+              <input
+                type="text"
+                class="form-control"
+                id="emailInput"
+                placeholder="Ingrese su Email"
+              />
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="flexCheckDefault" />
+              <label class="form-check-label" for="flexCheckDefault">
+                Acepto términos y condiciones de la compra
+              </label>
+              <div class="mb-3">
+                <button class="form-contol btn btn-success" type="submit">FINALIZAR COMPRA</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div id="hijoFooter">
+        <h5 class="tituloFooter">FOCUS FUNCIONAL TRAINING</h5>
+        <h6 class="tituloFooter">CÓRDOBA - ARGENTINA</h6>
+      </div>
+    </div>
+
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="../js/tienda.js"></script>
+  </body>
+</html>
