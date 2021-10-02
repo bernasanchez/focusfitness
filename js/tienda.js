@@ -228,15 +228,3 @@ obtenerJsonProductos();
 
 
 
-//Obtener DOLAR ACTUALIZADO
-// const obtenerValorDolar=()=>{
-// const APIURL="https://api-dolar-argentina.herokuapp.com/api/dolaroficial";
-//     $.ajax({
-//         method:"GET",
-//         url:APIURL,
-//         success: function(data){
-//             $("#valorDolar").append(`p alingn="center"> Dolar Compra:$ <b>${data.compra}</b> Dolar Venta:$ <b>${data.venta}</b></p>`);
-
-//         }
-//     });
-// }

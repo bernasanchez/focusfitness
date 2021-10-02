@@ -427,7 +427,7 @@
         display: grid;
         /* height: 4300px; */
         grid-template-columns: 100%;
-        grid-template-rows: 7% 20% 85% 5%;
+        grid-template-rows: 5% 25% 85% 5%;
         grid-template-areas: "header"
                             "portada"
                             "principal"
@@ -452,7 +452,7 @@
         background-color: black; 
     }
     .seccionPortadaIndex{
-        background-image: url(../multimedia/cf25.jpg);
+        background-image: url(../multimedia/cf25nueva.jpg);
         background-size:auto;
         background-repeat:no-repeat;
         max-width: 100%;
@@ -474,13 +474,14 @@
     .tituloPrincipal{
         font-family: 'Bebas Neue', cursive;
         color:yellow;
-        font-size: 500%;
+        font-size: 600%;
         text-align: center;
+       
     }
     .tituloSecundario{
         font-family: 'Bebas Neue', cursive;
         color: white;
-        font-size: 350%;
+        font-size: 400%;
         text-align: center;
         font-style: oblique;
 
@@ -491,12 +492,12 @@
         font-size: 250%;
         text-align: center;
         font-style: oblique;
-        padding-top: 3%;
+        padding-top: 8%;
     }
     .tituloFooter{
         font-family: 'Bebas Neue', cursive;
         color: white;
-        font-size: 150%;
+        font-size: 250%;
         text-align: center;
         font-style: oblique; 
     }
@@ -545,6 +546,10 @@
         justify-content: center;
         align-items: center;
         
+    }
+    #parrafoNosotros{
+        color:white;
+        font-size: 120%;
     }
     .cajaPresentacion{
         width: 600px;
